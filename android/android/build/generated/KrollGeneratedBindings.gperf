@@ -1,0 +1,16 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name RavenTitaniumBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "ti.raven.RavenTitaniumModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+ti.raven.RavenTitaniumModule, ::ti::raven::RavenTitaniumModule::bindProxy, ::ti::raven::RavenTitaniumModule::dispose
+%%

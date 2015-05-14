@@ -1,0 +1,3 @@
+[submodule "iphone/raven-objc"]
+	path = iphone/raven-objc
+	url = git://github.com/getsentry/raven-objc
