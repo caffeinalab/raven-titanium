@@ -9,6 +9,7 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#import "RavenClient.h"
 
 @implementation TiRavenModule
 
@@ -77,17 +78,28 @@
 -(void)initialize:(id)args
 {
     ENSURE_SINGLE_ARG(args, NSString);
-
+    
     [RavenClient setSharedClient:[RavenClient clientWithDSN:args]];
     [[RavenClient sharedClient] setupExceptionHandler];
-
-    NSLog(@"Raven is ready");
 }
 
 -(void)log:(id)args
 {
+    if ([RavenClient sharedClient] == nil) return;
+
     ENSURE_SINGLE_ARG(args, NSString);
-    RavenCaptureMessage(args);
+    [[RavenClient sharedClient]
+        captureMessage: args
+        level: kRavenLogLevelDebugWarning
+        method: "JS"
+        file: "JS"
+        line: (NSInteger)1
+    ];
+}
+
+-(void)crash
+{
+    @throw NSInternalInconsistencyException;
 }
 
 @end

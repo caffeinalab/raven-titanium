@@ -28,14 +28,14 @@
 		24DE9E1211C5FE74003F90F6 /* TiRavenModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiRavenModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* TiRaven_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiRaven_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		C672495F1B0387F500CA9FF7 /* TiExceptionHandler+EventLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = C672495E1B0387F500CA9FF7 /* TiExceptionHandler+EventLogging.h */; };
-		C67249611B03880800CA9FF7 /* TiExceptionHandler+EventLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = C67249601B03880800CA9FF7 /* TiExceptionHandler+EventLogging.m */; };
-		C67249681B03963A00CA9FF7 /* Raven.h in Headers */ = {isa = PBXBuildFile; fileRef = C67249621B03963A00CA9FF7 /* Raven.h */; };
-		C67249691B03963A00CA9FF7 /* RavenClient_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C67249631B03963A00CA9FF7 /* RavenClient_Private.h */; };
-		C672496A1B03963A00CA9FF7 /* RavenClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C67249641B03963A00CA9FF7 /* RavenClient.h */; };
-		C672496B1B03963A00CA9FF7 /* RavenClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C67249651B03963A00CA9FF7 /* RavenClient.m */; };
-		C672496C1B03963A00CA9FF7 /* RavenConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C67249661B03963A00CA9FF7 /* RavenConfig.h */; };
-		C672496D1B03963A00CA9FF7 /* RavenConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C67249671B03963A00CA9FF7 /* RavenConfig.m */; };
+		C672495F1B0387F500CA9FF7 /* TiExceptionHandler+Raven.h in Headers */ = {isa = PBXBuildFile; fileRef = C672495E1B0387F500CA9FF7 /* TiExceptionHandler+Raven.h */; };
+		C67249611B03880800CA9FF7 /* TiExceptionHandler+Raven.m in Sources */ = {isa = PBXBuildFile; fileRef = C67249601B03880800CA9FF7 /* TiExceptionHandler+Raven.m */; };
+		C6A6AFC51B050A3E00581A0E /* Raven.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A6AFBF1B050A3E00581A0E /* Raven.h */; };
+		C6A6AFC61B050A3E00581A0E /* RavenClient_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A6AFC01B050A3E00581A0E /* RavenClient_Private.h */; };
+		C6A6AFC71B050A3E00581A0E /* RavenClient.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A6AFC11B050A3E00581A0E /* RavenClient.h */; };
+		C6A6AFC81B050A3E00581A0E /* RavenClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A6AFC21B050A3E00581A0E /* RavenClient.m */; };
+		C6A6AFC91B050A3E00581A0E /* RavenConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A6AFC31B050A3E00581A0E /* RavenConfig.h */; };
+		C6A6AFCA1B050A3E00581A0E /* RavenConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A6AFC41B050A3E00581A0E /* RavenConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +56,14 @@
 		24DE9E1011C5FE74003F90F6 /* TiRavenModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiRavenModuleAssets.m; path = Classes/TiRavenModuleAssets.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiRaven_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRaven_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C672495E1B0387F500CA9FF7 /* TiExceptionHandler+EventLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiExceptionHandler+EventLogging.h"; path = "Classes/TiExceptionHandler+EventLogging.h"; sourceTree = "<group>"; };
-		C67249601B03880800CA9FF7 /* TiExceptionHandler+EventLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TiExceptionHandler+EventLogging.m"; path = "Classes/TiExceptionHandler+EventLogging.m"; sourceTree = "<group>"; };
-		C67249621B03963A00CA9FF7 /* Raven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Raven.h; sourceTree = "<group>"; };
-		C67249631B03963A00CA9FF7 /* RavenClient_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient_Private.h; sourceTree = "<group>"; };
-		C67249641B03963A00CA9FF7 /* RavenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient.h; sourceTree = "<group>"; };
-		C67249651B03963A00CA9FF7 /* RavenClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenClient.m; sourceTree = "<group>"; };
-		C67249661B03963A00CA9FF7 /* RavenConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenConfig.h; sourceTree = "<group>"; };
-		C67249671B03963A00CA9FF7 /* RavenConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenConfig.m; sourceTree = "<group>"; };
+		C672495E1B0387F500CA9FF7 /* TiExceptionHandler+Raven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiExceptionHandler+Raven.h"; path = "Classes/TiExceptionHandler+Raven.h"; sourceTree = "<group>"; };
+		C67249601B03880800CA9FF7 /* TiExceptionHandler+Raven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TiExceptionHandler+Raven.m"; path = "Classes/TiExceptionHandler+Raven.m"; sourceTree = "<group>"; };
+		C6A6AFBF1B050A3E00581A0E /* Raven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Raven.h; sourceTree = "<group>"; };
+		C6A6AFC01B050A3E00581A0E /* RavenClient_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient_Private.h; sourceTree = "<group>"; };
+		C6A6AFC11B050A3E00581A0E /* RavenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient.h; sourceTree = "<group>"; };
+		C6A6AFC21B050A3E00581A0E /* RavenClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenClient.m; sourceTree = "<group>"; };
+		C6A6AFC31B050A3E00581A0E /* RavenConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenConfig.h; sourceTree = "<group>"; };
+		C6A6AFC41B050A3E00581A0E /* RavenConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenConfig.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libTiRaven.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiRaven.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,18 +109,18 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C67249621B03963A00CA9FF7 /* Raven.h */,
-				C67249631B03963A00CA9FF7 /* RavenClient_Private.h */,
-				C67249641B03963A00CA9FF7 /* RavenClient.h */,
-				C67249651B03963A00CA9FF7 /* RavenClient.m */,
-				C67249661B03963A00CA9FF7 /* RavenConfig.h */,
-				C67249671B03963A00CA9FF7 /* RavenConfig.m */,
+				C6A6AFBF1B050A3E00581A0E /* Raven.h */,
+				C6A6AFC01B050A3E00581A0E /* RavenClient_Private.h */,
+				C6A6AFC11B050A3E00581A0E /* RavenClient.h */,
+				C6A6AFC21B050A3E00581A0E /* RavenClient.m */,
+				C6A6AFC31B050A3E00581A0E /* RavenConfig.h */,
+				C6A6AFC41B050A3E00581A0E /* RavenConfig.m */,
 				24DE9E0F11C5FE74003F90F6 /* TiRavenModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* TiRavenModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* TiRavenModule.h */,
 				24DD6CF81134B3F500162E58 /* TiRavenModule.m */,
-				C672495E1B0387F500CA9FF7 /* TiExceptionHandler+EventLogging.h */,
-				C67249601B03880800CA9FF7 /* TiExceptionHandler+EventLogging.m */,
+				C672495E1B0387F500CA9FF7 /* TiExceptionHandler+Raven.h */,
+				C67249601B03880800CA9FF7 /* TiExceptionHandler+Raven.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -142,13 +142,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* TiRaven_Prefix.pch in Headers */,
+				C6A6AFC51B050A3E00581A0E /* Raven.h in Headers */,
 				24DD6CF91134B3F500162E58 /* TiRavenModule.h in Headers */,
-				C672496A1B03963A00CA9FF7 /* RavenClient.h in Headers */,
-				C67249681B03963A00CA9FF7 /* Raven.h in Headers */,
+				C6A6AFC71B050A3E00581A0E /* RavenClient.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TiRavenModuleAssets.h in Headers */,
-				C672496C1B03963A00CA9FF7 /* RavenConfig.h in Headers */,
-				C67249691B03963A00CA9FF7 /* RavenClient_Private.h in Headers */,
-				C672495F1B0387F500CA9FF7 /* TiExceptionHandler+EventLogging.h in Headers */,
+				C6A6AFC91B050A3E00581A0E /* RavenConfig.h in Headers */,
+				C6A6AFC61B050A3E00581A0E /* RavenClient_Private.h in Headers */,
+				C672495F1B0387F500CA9FF7 /* TiExceptionHandler+Raven.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,10 +223,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DD6CFA1134B3F500162E58 /* TiRavenModule.m in Sources */,
-				C672496B1B03963A00CA9FF7 /* RavenClient.m in Sources */,
-				C672496D1B03963A00CA9FF7 /* RavenConfig.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* TiRavenModuleAssets.m in Sources */,
-				C67249611B03880800CA9FF7 /* TiExceptionHandler+EventLogging.m in Sources */,
+				C67249611B03880800CA9FF7 /* TiExceptionHandler+Raven.m in Sources */,
+				C6A6AFC81B050A3E00581A0E /* RavenClient.m in Sources */,
+				C6A6AFCA1B050A3E00581A0E /* RavenConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

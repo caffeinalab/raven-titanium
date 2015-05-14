@@ -6,7 +6,6 @@
  */
 
 #import "TiModule.h"
-#import "RavenClient.h"
 
 @interface TiRavenModule : TiModule
 {

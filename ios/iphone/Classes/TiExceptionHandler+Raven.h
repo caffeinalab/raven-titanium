@@ -8,6 +8,6 @@
 #import <Foundation/Foundation.h>
 #import "TiExceptionHandler.h"
 
-@interface TiExceptionHandler (EventLogging)
+@interface TiExceptionHandler (Raven)
 
 @end
