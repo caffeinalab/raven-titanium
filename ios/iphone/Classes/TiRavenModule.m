@@ -13,6 +13,19 @@
 
 @implementation TiRavenModule
 
+void HandleSignal(int signal) {
+	NSLog(@"We received a signal: %d", signal);
+    if ([RavenClient sharedClient] == nil) return;
+    
+    [[RavenClient sharedClient]
+        captureMessage: [NSString stringWithFormat:@"SIGNAL: %d", signal]
+        level: kRavenLogLevelDebugFatal
+        method: __FUNCTION__
+        file: __FILE__
+        line: __LINE__
+    ];
+}
+
 #pragma mark Internal
 
 // this is generated for your module, please do not change it
@@ -78,10 +91,20 @@
 -(void)initialize:(id)args
 {
     ENSURE_SINGLE_ARG(args, NSString);
-    
+
     [RavenClient setSharedClient:[RavenClient clientWithDSN:args]];
+
+    // Set Exception Handler
     [[RavenClient sharedClient] setupExceptionHandler];
-}
+
+    // Set Signal Handler
+    struct sigaction signalAction;
+    memset(&signalAction, 0, sizeof(signalAction));
+    signalAction.sa_handler = &HandleSignal;
+    sigaction(SIGABRT, &signalAction, NULL);
+    sigaction(SIGILL, &signalAction, NULL);
+    sigaction(SIGBUS, &signalAction, NULL);
+ }
 
 -(void)log:(id)args
 {
@@ -93,7 +116,7 @@
         level: kRavenLogLevelDebugWarning
         method: "JS"
         file: "JS"
-        line: (NSInteger)1
+        line: [NSNumber numberWithInteger:1]
     ];
 }
 

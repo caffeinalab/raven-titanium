@@ -1,29 +1,29 @@
 /**
  * raven-titanium
  *
- * Created by Flavio De Stefano
+ * Created by David Bankier on 17/06/2014.
+ * Edited by Flavio De Stefano
  * Copyright (c) 2015 Caffeina. All rights reserved.
  */
 
-#import "TiExceptionHandler+Raven.h"
+#import "TiExceptionHandler+EventLogging.h"
 #import "TiApp.h"
 #import "TiAppiOSProxy.h"
 #import "RavenClient.h"
 
-@implementation TiExceptionHandler (Raven)
+@implementation TiExceptionHandler (EventLogging)
 
 - (void)reportScriptError: (TiScriptError*)ex
 {
-    NSLog(@"[ERROR] %@", ex.detailedDescription);
-    
+    NSLog(@"[ERROR] %@ (Raven)", ex.detailedDescription);
     if ([RavenClient sharedClient] == nil) return;
+    
     [[RavenClient sharedClient]
         captureMessage: ex.message
         level: kRavenLogLevelDebugError
         method: "JS"
         file: [ex.sourceURL UTF8String]
-        line: ex.lineNo
-     
+        line: [NSNumber numberWithInteger:ex.lineNo]
     ];
 }
 
